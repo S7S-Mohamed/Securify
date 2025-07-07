@@ -1,0 +1,103 @@
+{
+  "name": "securecodefixer",
+  "displayName": "Secure Code Fixer",
+  "description": "Detects insecure code patterns and suggests AI-powered fixes",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hussienelkassas/securecodefixer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hussienelkassas/securecodefixer/issues"
+  },
+  "keywords": [
+    "security",
+    "code-fixer",
+    "vscode-extension"
+  ],
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:python"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "secureCodeFixer.fixWithAI",
+        "title": "SecureCodeFixer:Fix with AI"
+      },
+      {
+        "command": "secureCodeFixer.setApiKey",
+        "title": "SecureCodeFixer:Set API Key"
+      },
+      {
+        "command": "secureCodeFixer.configurePatterns",
+        "title": "SecureCodeFixer:Configure Insecure Patterns"
+      }
+    ],
+    "configuration": {
+      "title": "Secure Code Fixer",
+      "properties": {
+        "secureCodeFixer.insecurePatterns": {
+          "type": "object",
+          "default": {
+            "javascript": [],
+            "python": []
+          },
+          "description": "User-defined regex patterns for insecure code detection",
+          "properties": {
+            "javascript": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "JavaScript patterns to detect (regex strings)"
+            },
+            "python": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Python patterns to detect (regex strings)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/esprima": "^4.0.6",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "18.15.0",
+    "@types/sinon": "^10.0.20",
+    "@types/vscode": "^1.86.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.39.0",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.0",
+    "typescript": "^4.9.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.22.0",
+    "@types/esprima": "^4.0.6",
+    "axios": "^1.4.0",
+    "esprima": "^4.0.1"
+    
+  }
+}
