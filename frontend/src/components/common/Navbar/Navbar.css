@@ -1,0 +1,23 @@
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #1e609a; 
+  border-radius: 0.5rem;
+  color: #fff; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0088ff;
+}
+.navigation {
+  z-index: 51;
+  position: absolute;
+  width: 100%;
+}

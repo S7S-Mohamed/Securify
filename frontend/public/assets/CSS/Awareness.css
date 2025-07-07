@@ -1,0 +1,29 @@
+.awareness .background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-image: url(13777983_gradient_2.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+}
+.topic-desc-font {
+  font-size: larger;
+  color: rgba(77, 73, 73, 0.815);
+}
+.awareness .cc {
+  padding: 20px;
+}
+.awareness .row .card:hover {
+  transform: translateY(-5px);
+}
+.awareness .row .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  background: rgba(206, 202, 202, 0.342);
+  transition: transform 0.3s ease;
+}
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}

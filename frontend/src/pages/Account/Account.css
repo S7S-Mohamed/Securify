@@ -1,0 +1,107 @@
+.account-page .nav-pills .nav-link {
+  background-color: var(--input-bg);
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.account-page .nav-pills .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--glass-border);
+}
+
+.account-page .nav-pills .nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  box-shadow: 0 4px 15px rgba(0, 136, 255, 0.4);
+}
+
+.account-page .card {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-primary);
+}
+
+.account-page .form-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.account-page .form-text {
+  color: rgba(204, 204, 204, 0.6);
+}
+
+.account-page .form-control:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+}
+
+.progress-circle .track {
+  stroke: var(--input-bg); 
+}
+.progress-circle .progress-line {
+  stroke: var(--success-border); 
+}
+.progress-circle .progress-text h3 {
+    color: var(--text-primary);
+}
+.progress-circle .progress-text p {
+    color: var(--text-secondary);
+}
+
+.summary-card {
+    background: var(--input-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    transition: background 0.3s ease;
+}
+.summary-card:hover {
+    background: rgba(0,0,0,0.4) !important;
+}
+
+.achievement-item {
+    background: var(--input-bg) !important;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+}
+.achievement-item h6 {
+    color: var(--text-primary);
+}
+.achievement-item small {
+    color: var(--text-secondary);
+}
+
+.account-page .table {
+    color: var(--text-primary);
+}
+
+.account-page .table thead {
+    color: var(--text-secondary);
+}
+
+.account-page .table th,
+.account-page .table td {
+    border-color: var(--glass-border) !important;
+    vertical-align: middle;
+}
+
+.account-page .table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.account-page .progress {
+    height: 22px !important;
+    background-color: var(--input-bg) !important;
+    border-radius: 11px;
+    padding: 3px;
+    border: 1px solid var(--glass-border);
+}
+
+.account-page .progress-bar {
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}

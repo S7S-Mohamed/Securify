@@ -1,0 +1,44 @@
+.hero {
+  background-image: url("13777983_gradient_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer {
+  background-image: url("13777983_gradient_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-blue {
+  background-image: url("13777983_gradient_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.landscape-text {
+  color: rgba(170, 16, 16, 0.753);
+}
+.landscape {
+  margin-top: -20px;
+}
+@media (max-width: 991px) {
+  .navbar-collapse .nav-link {
+    padding: 10px 15px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 10px;
+}
+.sign-in-button-fixed {
+  position: fixed;
+  top: 20px; /* Adjust as needed to align with navbar height */
+  right: 20px; /* Keep it to the right */
+  z-index: 1030; /* Higher than the navbar to ensure it's on top */
+}

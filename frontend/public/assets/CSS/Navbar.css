@@ -1,0 +1,24 @@
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.8); /* Default color */
+}
+
+/* Optional: Hover effect for nav items */
+
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #1e609a; /* Same background color for active and hover */
+  border-radius: 0.5rem;
+  color: #fff; /* Text color when hovered or active */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0088ff;
+}
+.navigation {
+  z-index: 51;
+  position: absolute;
+  width: 100%;
+}

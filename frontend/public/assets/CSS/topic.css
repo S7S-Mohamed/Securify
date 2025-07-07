@@ -1,0 +1,149 @@
+.topic .bod {
+  padding: 20px;
+}
+
+.topic .background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-image: url("13777983_gradient_2.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+}
+.topic .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topic a {
+  transform: translateY(4px);
+}
+
+.topic .tabs {
+  font-family: "Cascadia";
+  font-size: larger;
+}
+
+.nav-space {
+  height: 56px;
+}
+
+.topic .responsive-title {
+  font-size: 1.75rem;
+}
+
+.topic .responsive-content {
+  font-size: 1.25rem;
+}
+.topic ul li {
+  padding: 4px 4px;
+}
+/* .topic .Vid {
+  width: 800px;
+  border-radius: 3% 3% 4% 4%;
+  border-top: 2px solid rgb(65, 65, 65);
+  border-right: 2px solid rgb(65, 65, 65);
+  border-left: 2px solid rgb(65, 65, 65);
+  border-bottom: 0px;
+  box-shadow: 2px 2px 4px 4px rgba(66, 66, 66, 0.562);
+
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+} */
+/* .topic .Vid:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 7px 0px rgb(187, 185, 185);
+} */
+
+@media (min-width: 1200px) {
+  .topic .responsive-title {
+    font-size: 2.5rem;
+  }
+  .topic ul li {
+    padding: 10px 10px;
+  }
+
+  .topic .responsive-content {
+    font-size: 1.5rem;
+  }
+  .topic .Vid {
+    width: 100%;
+  }
+}
+/* Container for the video player */
+.Vid-container {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-color: #000; /* Optional: in case the video is loading */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures no overflow from the child elements */
+}
+
+/* Custom styling for ReactPlayer */
+.react-player {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Container styling to ensure proper responsive behavior */
+.player-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Custom controls styling for better visibility */
+.react-player video::-webkit-media-controls {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 8px 8px;
+}
+
+/* Add hover effect */
+.react-player:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Loading overlay styling */
+.player-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.player-loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .react-player {
+    margin: 1rem auto;
+  }
+}

@@ -1,0 +1,20 @@
+.login-register {
+  background-image: url("13777983_gradient_2.jpg");
+  background-size: cover;
+  background-position: bottom bottom;
+}
+.login-register .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.login-register .card:hover {
+  transform: translateY(-5px);
+}
+
+.login-register .card-body {
+  padding: 2.5rem !important;
+}
